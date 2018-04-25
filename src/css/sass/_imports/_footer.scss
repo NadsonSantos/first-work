@@ -1,0 +1,63 @@
+@mixin lato(){
+	font-family: lato;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 0px;
+}
+
+
+footer{
+	padding-top: 15px;
+	background-color: #262626;
+	article{
+	    width: 400px;
+    	margin-left: 42px;
+    	display: inline-block;
+		h4{
+			@include lato();
+			font-size: 16px;
+    		padding-bottom: 14px;
+    		margin: 0px;
+    		border-bottom: solid 3px #979797;
+			color: #ffffff;
+		}
+		h5{
+			@include lato();
+			padding: 11px 0 25px 0;
+    		margin: 0px;
+    		font-size: 16px;
+			color: #ffffff;
+		}
+	}
+	aside{
+	    width: 279px;
+		display:inline-block;
+		float: right;
+    	margin-right: 116px;
+		h3{
+
+			@include lato();
+			font-weight: bold;
+			padding-bottom: 5px;
+			font-size: 20px;
+    		color: #ffffff;
+   			margin: 0px;
+   			font-size: 20px;
+		}
+		h6{
+			@include lato();
+			padding-bottom: 8px;
+			display: inline-block;
+		    margin: 0px;
+		    font-size: 19px;
+    		color: #ffffff;
+		}
+		img{
+			display:inline-block;
+    		width: 14px;
+    		height: 16px;
+		}
+	}	
+}
