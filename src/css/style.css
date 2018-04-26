@@ -768,6 +768,95 @@ footer aside img {
 }
 
 body {
+  font-family: Lato;
+}
+
+.banner {
+  height: 500px;
+  background: url("../image/bitmap.png") left bottom #037c7c repeat-x;
+}
+
+/*Regra dos planos*/
+.planos-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 960px;
+  margin: 0 auto;
+}
+
+.planos-box .plano-recomendado-write {
+  background-color: #037c7c;
+  border-radius: 15px;
+}
+
+.planos-box .plano {
+  border-radius: 15px;
+  background-color: #ffffff;
+  width: 100%;
+  box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.24);
+  margin-right: 22px;
+  height: 350px;
+  text-align: center;
+}
+
+.planos-box .plano:last-child {
+  margin-right: 0;
+}
+
+.planos-box .plano h4 {
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 300;
+  color: #037c7c;
+  margin: 0px;
+  text-transform: uppercase;
+}
+
+.planos-box .plano .valor {
+  height: 108px;
+  overflow: hidden;
+  position: relative;
+}
+
+.planos-box .plano .valor span {
+  display: inline-block;
+  font-weight: bold;
+  color: #037c7c;
+}
+
+.planos-box .plano .valor span:first-child {
+  font-size: 20px;
+  position: absolute;
+  top: 20px;
+}
+
+.planos-box .plano .valor span:last-child {
+  margin-left: 25px;
+  font-size: 90px;
+}
+
+.planos-box .plano .tipo-plano {
+  font-size: 30px;
+  font-weight: 300;
+  color: #4a4a4a;
+  margin: 0;
+  line-height: 0px;
+  margin-left: 30px;
+}
+
+.planos-box .plano.plano-recomendado {
+  background-color: #ff840c;
+  border-radius: 15px;
+  height: 400px;
+}
+
+.planos-box .plano.plano-recomendado h4 {
+  color: #FFF;
+}
+
+body {
   margin: 0px;
   padding: 0px;
   border: 0px;
