@@ -59,7 +59,7 @@ gulp.task('clean', function(){
 	.pipe(clean())
 });
 
-gulp.task('default', ['clean','copy', 'copy-image', 'sass-dev', 'browser-sync'], function(){	
+gulp.task('default', ['clean', 'sass-dev', 'browser-sync'], function(){	
     gulp.watch(["./src/css/sass/*/*.scss"], ['sass-dev'])
 })
 
