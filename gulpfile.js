@@ -60,7 +60,7 @@ gulp.task('clean', function(){
 });
 
 gulp.task('default', ['clean', 'sass-dev', 'browser-sync'], function(){	
-    gulp.watch(["./src/css/sass/*/*.scss"], ['sass-dev'])
+    gulp.watch(["./src/css/sass/**/*.scss", "./src/css/sass/*/*.scss" ], ['sass-dev'])
 })
 
  gulp.task('work',['clean','default'])
