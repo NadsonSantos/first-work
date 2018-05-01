@@ -125,38 +125,32 @@
 
 .s2 form {
   height: 115px;
-  margin-left: 30%;
+  width: 620px;
+  display: flex;
+  margin: 0 auto;
   padding-bottom: 70px;
-  text-align: center;
 }
 
-.s2 form .inputs {
-  font-family: lato;
-  font-weight: 300;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: 0px;
+.s2 form input {
   display: flex;
   color: #262626;
   font-size: 20px;
+  padding-left: 20px;
   margin-bottom: 19px;
-  width: 300px;
+  width: 280px;
   height: 48px;
   border-radius: 10px;
   background-color: #ffffff;
   margin-right: 20px;
 }
 
-.s2 form .inputs:last-child {
-  display: flex;
+.s2 form textarea {
   margin: 0px;
-  margin-top: -142px;
-  margin-left: 320px;
-  width: 300px;
-  height: 115px;
+  width: 260px;
+  height: 70px;
   border-radius: 10px;
   background-color: #ffffff;
+  padding: 20px;
 }
 
 .s2 .botao {
@@ -568,4 +562,8 @@ body {
   padding: 0px;
   border: 0px;
   font-family: lato;
+}
+
+input, textarea {
+  border: 0;
 }
