@@ -47,21 +47,18 @@
 		    	font-size:50px;
 		    	font-weight: 300;
 		    }
-		    span{
-		    
-			    &:first-child {
-		    	    font-size: 25px;
-    				padding-bottom: 20px;
-			    	font-size:20px;
-		    		font-weight: 300;
-			    }
-			    &:last-child{
-			    	font-size:16px;
-		    		font-weight: 300;
-	    		    margin-left: -35px;
-    				margin-top: 10px;
-			    }
+     		.centavos{
+	    	    font-size:25px;
+			    margin-bottom: 25px;
+		    	font-size:20px;
+	    		font-weight: 300;
 		    }
+    		.diario{
+		    	font-size:20px;
+	    		font-weight: 300;
+    		    margin-left: -30px;
+				margin-top: 10px;
+    		} 
 	    }
     }
 }

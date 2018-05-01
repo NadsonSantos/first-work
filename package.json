@@ -13,7 +13,9 @@
     "gulp-sass": "^4.0.1"
   },
   "devDependencies": {
-    "browser-sync": "^2.23.7"
+    "browser-sync": "^2.23.7",
+    "gulp-clean-css": "^3.9.3",
+    "gulp-htmlmin": "^4.0.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

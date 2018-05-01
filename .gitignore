@@ -1,5 +1,5 @@
-"src/
+src/
 node_modules/
 package-lock.json
-.gitignore"
-gulpfile.js"
+.gitignore
+gulpfile.js
