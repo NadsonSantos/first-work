@@ -26,6 +26,7 @@ gulp.task('browser-sync', function() {
 gulp.task('sass-dev', function(){
 	gulp.src('src/css/sass/style.scss')
 	.pipe(sass({outputStyle: 'expanded'}).on('error', sass.logError))
+    .pipe(rename("style.min.css"))
 	.pipe(gulp.dest('src/css'))
 	.pipe(reload({ stream:true }))
 });
