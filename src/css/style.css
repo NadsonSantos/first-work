@@ -172,21 +172,6 @@
   margin-bottom: 74px;
 }
 
-@media (max-width: 360px) {
-  .inputs:last-child {
-    display: flex;
-    margin: 0px;
-    width: 300px;
-    height: 115px;
-    border-radius: 10px;
-    background-color: #ffffff;
-  }
-  .botao {
-    margin-left: 35%;
-    margin-top: 130px;
-  }
-}
-
 header {
   padding-top: 65px;
 }
@@ -552,8 +537,38 @@ footer aside img {
 }
 
 @media (max-width: 360px) {
+  .banner {
+    height: auto;
+  }
   .planos-box {
+    width: 100%;
     flex-direction: column;
+  }
+  .plano {
+    margin-bottom: 20px;
+  }
+  .s2 form {
+    align-items: center;
+    flex-direction: column;
+  }
+  .s2 form .input {
+    display: block;
+  }
+  .botao {
+    margin-left: 35%;
+    margin-top: 130px;
+  }
+  footer {
+    width: 100%;
+    flex-direction: colunm;
+  }
+  footer article {
+    display: block;
+    margin-left: 0px;
+  }
+  footer aside {
+    float: none;
+    display: block;
   }
 }
 
