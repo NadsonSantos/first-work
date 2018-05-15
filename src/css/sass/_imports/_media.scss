@@ -1,0 +1,84 @@
+@media (max-width:360px){
+	.cabecalho{
+		nav{
+			picture{
+				img{
+					margin-left:0;
+					margin-right:50px;
+				}
+				
+			}
+			ul{
+				display:none;
+			}
+		}
+	}
+	.nav-face{
+		margin-bottom:-10px;
+		padding-top:0px;
+		float:none;
+		margin-right: 0;
+		display:inline-block;
+	}
+	.banner{
+
+		height:auto;
+	    margin-bottom: -39px;
+	}
+	.banner-titulo{
+		margin:0px !important;
+		font-size:35px !important;
+	}
+	.planos-box{
+		width:100%;
+		flex-direction: column;
+
+	}
+	.plano{
+		 margin-bottom: 20px;
+		 margin-right:0px !important;
+	}
+
+	.localidades{
+		padding:0px;
+		li{
+			padding-bottom:5px !important;
+			border-right:0 !important;
+			flex-direction:column !important;
+			display:block  !important;
+			&:last-child{
+				padding-bottom:0px !important;
+			}
+		}
+	}
+
+	.s2{
+		form{
+			margin-left: 35px;
+			align-items: left;
+			flex-direction:column;
+			.input{
+				display:block;
+			}
+		}
+	}
+	.botao{
+	    margin-left:5.3em !important;
+	    margin-top: 130px;
+	}
+	footer{
+		width:100%;
+		flex-direction:colunm;
+		article{
+			display:block;
+			margin-left:0px;
+			h4{
+				width:359px;
+			}
+		}
+		aside{
+			float:none;
+			display:block;
+		}
+	}
+}
