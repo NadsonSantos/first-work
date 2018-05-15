@@ -59,7 +59,7 @@ gulp.task('clean', function(){
 
 //para build //
 gulp.task('minify-css', function(){
-  return gulp.src('./src/css/*.css')
+  return gulp.src('./src/css/style.min.css')
     .pipe(cleanCSS({compatibility: 'ie8'}))
     .pipe(rename("style.min.css"))
     .pipe(gulp.dest('deploy/css'));
@@ -77,4 +77,4 @@ gulp.task('default', ['clean', 'sass-dev', 'browser-sync'], function(){
 })
 
  gulp.task('work',['clean','default'])
- gulp.task('build', ['clean', 'sass-dev', 'copy', 'copy-image', 'minify', 'minify-css'])
+ gulp.task('build', [ 'sass-dev', 'copy', 'copy-image', 'minify', 'minify-css'])
