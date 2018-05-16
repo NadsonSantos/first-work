@@ -67,9 +67,9 @@ gulp.task('minify-css', function(){
 
 
 gulp.task ('minify', function(){
-    return gulp.src('deploy/*.html')
+    return gulp.src('./src/*.html')
     .pipe(htmlmin ({collapseWhitespace:true}))
-    .pipe(gulp.dest( 'deploy/' ));
+    .pipe(gulp.dest('deploy/'));
 });
 
 gulp.task('default', ['clean', 'sass-dev', 'browser-sync'], function(){	
@@ -77,4 +77,4 @@ gulp.task('default', ['clean', 'sass-dev', 'browser-sync'], function(){
 })
 
  gulp.task('work',['clean','default'])
- gulp.task('build', [ 'sass-dev', 'copy', 'copy-image', 'minify', 'minify-css'])
+ gulp.task('build', [ 'sass-dev', 'copy-image', 'minify', 'minify-css'])

@@ -54,7 +54,6 @@
 	.s2{
 		form{
 			margin-left: 35px;
-			align-items: left;
 			flex-direction:column;
 			.input{
 				display:block;
@@ -67,8 +66,9 @@
 	}
 	footer{
 		width:100%;
-		flex-direction:colunm;
+		flex-direction:column;
 		article{
+			width:359px;	
 			display:block;
 			margin-left:0px;
 			h4{
@@ -76,6 +76,7 @@
 			}
 		}
 		aside{
+			width:359px;
 			float:none;
 			display:block;
 		}

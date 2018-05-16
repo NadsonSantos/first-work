@@ -583,7 +583,6 @@ footer aside img {
   }
   .s2 form {
     margin-left: 35px;
-    align-items: left;
     flex-direction: column;
   }
   .s2 form .input {
@@ -595,9 +594,10 @@ footer aside img {
   }
   footer {
     width: 100%;
-    flex-direction: colunm;
+    flex-direction: column;
   }
   footer article {
+    width: 359px;
     display: block;
     margin-left: 0px;
   }
@@ -605,6 +605,7 @@ footer aside img {
     width: 359px;
   }
   footer aside {
+    width: 359px;
     float: none;
     display: block;
   }
