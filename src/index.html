@@ -13,9 +13,9 @@
 				<img class="nav-logo" src="image/group.png" alt="logo">
 				</picture>	
 				<ul class="menu-navegacao">
-					<li><a href="#planos-titulo">Planos</a></li>
-					<li><a href="#cobertura">Cobertura</a></li>
-					<li><a href="#contato">Contato</a></li>
+					<li><a class="links" href="#planos-titulo">Planos</a></li>
+					<li><a class="links" href="#cobertura">Cobertura</a></li>
+					<li><a class="links" href="#contato">Contato</a></li>
 				</ul>
 				<a href="#" class="nav-face">
 						<img src="image/facebook.png">
@@ -27,7 +27,7 @@
 			<article>
 				<h2 class="banner-titulo">Banda Larga em alta velocidade com Facebook e Whatsapp ilimitado!</h2>
 				<h1 class="banner-subtitulo">Planos a partir de <br>
-					<a href="#planos-titulo" class="banner-link">
+					<a href="#planos-titulo" class="banner-link links">
 						<p>R&#36;1</p>			
 							<span class="centavos">,50</span>
 							<span class="diario">por dia</span>
@@ -155,5 +155,15 @@
 			<h6>(71)9-8878-2345</h6>
 		</aside>
 	</footer>
+	<script type="text/javascript" src="./js/jquery.min.js"></script>
+	<script>
+		var $doc = $('html, body');
+		$('.links').click(function() {
+		    $doc.animate({
+		        scrollTop: $( $.attr(this, 'href') ).offset().top
+		    }, 500);
+		    return false;
+		});
+	</script>
 </body>
 </html>
