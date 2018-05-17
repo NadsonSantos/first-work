@@ -42,7 +42,7 @@ gulp.task('autoprefixer', () =>
 
 
 gulp.task('copy', function(){
-	gulp.src('src/index.html')
+	gulp.src(['src/index.html', './src/js'])
 	.pipe(copy())
 	.pipe(gulp.dest('deploy/'))
 });
@@ -72,9 +72,16 @@ gulp.task ('minify', function(){
     .pipe(gulp.dest('deploy/'));
 });
 
+gulp.task('copy-build', function(){
+    gulp.src('./src/js')
+    .pipe(copy())
+    .pipe(gulp.dest('deploy/'))
+});
+
+
 gulp.task('default', ['clean', 'sass-dev', 'browser-sync'], function(){	
     gulp.watch(["./src/css/sass/**/*.scss", "./src/css/sass/*/*.scss" ], ['sass-dev'])
 })
 
  gulp.task('work',['clean','default'])
- gulp.task('build', [ 'sass-dev', 'copy-image', 'minify', 'minify-css'])
+ gulp.task('build', [ 'sass-dev', 'copy-image', 'copy-build', 'minify', 'minify-css'])
