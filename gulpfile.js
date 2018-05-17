@@ -73,9 +73,9 @@ gulp.task ('minify', function(){
 });
 
 gulp.task('copy-build', function(){
-    gulp.src('./src/js')
+    gulp.src('./src/js/*.js')
     .pipe(copy())
-    .pipe(gulp.dest('deploy/'))
+    .pipe(gulp.dest('deploy/js'))
 });
 
 
