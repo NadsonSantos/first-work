@@ -1,7 +1,7 @@
 {
   "name": "trabalho",
   "version": "1.0.0",
-  "description": "",
+  "description": "site meuvizinho",
   "main": "gulpfile.js",
   "dependencies": {
     "gulp": "^3.9.1",
@@ -20,6 +20,6 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Nadson",
   "license": "ISC"
 }

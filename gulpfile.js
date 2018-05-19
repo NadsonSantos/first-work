@@ -13,7 +13,6 @@ gulp.task('browser-sync', function() {
     browserSync.init(
     	[
     		"./src/css/*.css", 
-    		"./src/scripts/*.js", 
     		"./src/*.html",
     		"./src/image/*"
 		], {
@@ -58,6 +57,8 @@ gulp.task('clean', function(){
 });
 
 //para build //
+
+
 gulp.task('minify-css', function(){
   return gulp.src('./src/css/style.min.css')
     .pipe(cleanCSS({compatibility: 'ie8'}))
@@ -72,8 +73,8 @@ gulp.task ('minify', function(){
     .pipe(gulp.dest('deploy/'));
 });
 
-gulp.task('copy-build', function(){
-    gulp.src('./src/js/*.js')
+gulp.task('copy-js', function(){
+    gulp.src('./src/scripts/*.js')
     .pipe(copy())
     .pipe(gulp.dest('deploy/js'))
 });
@@ -82,6 +83,5 @@ gulp.task('copy-build', function(){
 gulp.task('default', ['clean', 'sass-dev', 'browser-sync'], function(){	
     gulp.watch(["./src/css/sass/**/*.scss", "./src/css/sass/*/*.scss" ], ['sass-dev'])
 })
-
  gulp.task('work',['clean','default'])
- gulp.task('build', [ 'sass-dev', 'copy-image', 'copy-build', 'minify', 'minify-css'])
+ gulp.task('build', [ 'sass-dev', 'copy-image', 'copy-js', 'minify', 'minify-css'])

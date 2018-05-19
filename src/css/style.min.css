@@ -333,14 +333,7 @@ footer aside img {
 }
 
 .animar {
-  animation: body-animar 2s ease-in-out;
-}
-
-.plano-animado {
-  opacity: 0;
-  animation: body-animar 5s ease-in-out;
-  animation-delay: 2s;
-  animation-fill-mode: forwards;
+  animation: body-animar .8s ease-in-out;
 }
 
 .logo-animado {
@@ -352,40 +345,38 @@ footer aside img {
   animation-direction: alternate;
 }
 
-@keyframes titulo-animado {
+@keyframes anime-left {
   0% {
-    margin-left: -2000px;
-    display: none;
+    transform: translate3d(-290px, 0px, 0px);
   }
   100% {
-    margin-left: 0px;
-    display: block;
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
   }
 }
 
-.titulo-animado {
-  animation: titulo-animado 10s ease-in-out;
-  animation-fill-mode: forwards;
-}
-
-@keyframes localidade-animado {
+@keyframes anime-right {
   0% {
-    margin-left: 1500px;
-    height: 24px;
-    display: none;
+    transform: translate3d(290px, 0px, 0px);
   }
   100% {
-    display: block;
-    margin-left: 0px;
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
   }
 }
 
-.local-animado {
-  height: 24px;
-  animation: localidade-animado 10s ease-out;
-  animation-fill-mode: forwards;
-  animation-iteration-count: infinite;
+.animar-left {
+  opacity: 0;
+  animation: anime-left 5s linear;
   animation-delay: 0s;
+  animation-fill-mode: forwards;
+}
+
+.animar-right {
+  opacity: 0;
+  animation-delay: 1s;
+  animation: anime-right 5s linear;
+  animation-fill-mode: forwards;
 }
 
 .banner {
