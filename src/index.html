@@ -16,10 +16,8 @@
 					<li><a class="links" href="#planos-titulo">Planos</a></li>
 					<li><a class="links" href="#cobertura">Cobertura</a></li>
 					<li><a class="links" href="#contato">Contato</a></li>
-				</ul>
-				<a href="#" class="nav-face">
-						<img src="image/facebook.png">
-				</a>	
+					<li><a href="#" class="nav-face"><img src="image/facebook.png"></a></li>
+				</ul>	
 			</nav>
 	</header>
 	<main>
@@ -38,7 +36,7 @@
 		<section class="planos">
 				<h1 id="planos-titulo">Planos</h1>
 				<div class="planos-box">
-					<div class="plano animar-left">
+					<div class="plano plano1">
 						<h4>Meia boca</h4>
 						<div class="valor">
 							<span>R$</span>
@@ -56,7 +54,7 @@
 							<li>Suporte 24/7</li>
 						</ul>
 					</div>
-					<div class="plano plano-recomendado animar-left">
+					<div class="plano plano-recomendado plano2">
 						<div class="plano-recomendado-write">
 							<h4>carente</h4>
 							<div class="valor">
@@ -76,7 +74,7 @@
 						</div>
 						<h3>Recomendado</h3>
 					</div>
-					<div class="plano animar-right">
+					<div class="plano  plano3">
 						<h4>sindicato</h4>
 						<div class="valor">
 							<span>R$</span>
@@ -93,7 +91,7 @@
 							<li>Suporte 24/7</li>
 						</ul>
 					</div>
-					<div class="plano animar-right">
+					<div class="plano plano4">
 						<h4>Barão</h4>
 						<div class="valor">
 							<span>R$</span>
@@ -156,14 +154,6 @@
 		</aside>
 	</footer>
 	<script type="text/javascript" src="scripts/jquery.min.js"></script>
-	<script type="text/javascript">
-			var $doc = $('html, body');
-			$('.links').click(function() {
-    		$doc.animate({
-       			 scrollTop: $( $.attr(this, 'href') ).offset().top
-   		 }, 500);
-    return false;
-});
-	</script>
+	<script type="text/javascript" src="scripts/function.js"></script>
 </body>
 </html>

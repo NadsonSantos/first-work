@@ -51,10 +51,18 @@
 			}
 		}
 	}
+	.ma1{
+		article{
+			height:auto;
+		}
+	}
 	.s2{
 		form{
-			margin-left: 35px;
+			width:100%;
 			flex-direction:column;
+			.area{
+			    padding-left: 25px;
+			}
 			.input{
 				display:block;
 			}
@@ -68,15 +76,15 @@
 		width:100%;
 		flex-direction:column;
 		article{
-			width:359px;	
+			width:100%;	
 			display:block;
 			margin-left:0px;
 			h4{
-				width:359px;
+				width:100%;
 			}
 		}
 		aside{
-			width:359px;
+			width:100%;
 			float:none;
 			display:block;
 		}
