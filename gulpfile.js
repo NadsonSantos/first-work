@@ -59,7 +59,7 @@ gulp.task('clean', function(){
 });
 
 gulp.task('concatjs', function(){
-    return gulp.src(['./src/scripts/concat/function.js', './src/scripts/concat/menu.js'])
+    return gulp.src(['./src/scripts/concat/function.js', './src/scripts/concat/menu.js', './src/scripts/concat/map.js'])
     .pipe(concat('all.js'))
     .pipe(gulp.dest('./src/scripts'))
     .pipe(reload({ stream:true }))
