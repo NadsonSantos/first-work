@@ -1,6 +1,17 @@
 @media screen and (max-width:360px){
+	header{
+		nav{
+			padding-left:0px !important;
+		}
+	}
+
+	.menu-retratil{
+		margin-right:0px !important;
+
+	}
 	.cabecalho{
 		nav{
+		    justify-content: space-around;
 			picture{
 				img{
 					margin-left:0;
@@ -192,6 +203,13 @@
 	}
 }
 @media screen and (max-width:320px){
+	
+	header{
+		nav{
+			padding-left:0px !important;
+		}
+	}
+
 	.area{
 		padding-left:0px !important;
 	}
@@ -204,7 +222,11 @@
 	}
 }
 @media screen and (max-width:425px){
-
+	header {
+		 nav{
+		    justify-content: space-around;
+		 }
+	}
 	.s2{
 		form{
 			align-items: center;

@@ -682,6 +682,15 @@ footer aside img {
 }
 
 @media screen and (max-width: 360px) {
+  header nav {
+    padding-left: 0px !important;
+  }
+  .menu-retratil {
+    margin-right: 0px !important;
+  }
+  .cabecalho nav {
+    justify-content: space-around;
+  }
   .cabecalho nav picture img {
     margin-left: 0;
     margin-right: 50px;
@@ -859,6 +868,9 @@ footer aside img {
 }
 
 @media screen and (max-width: 320px) {
+  header nav {
+    padding-left: 0px !important;
+  }
   .area {
     padding-left: 0px !important;
   }
@@ -872,6 +884,9 @@ footer aside img {
 }
 
 @media screen and (max-width: 425px) {
+  header nav {
+    justify-content: space-around;
+  }
   .s2 form {
     align-items: center;
   }
