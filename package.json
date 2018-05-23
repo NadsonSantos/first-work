@@ -1,5 +1,5 @@
 {
-  "name": "trabalho",
+  "name": "meuvizinho",
   "version": "1.0.0",
   "description": "site meuvizinho",
   "main": "gulpfile.js",
@@ -15,7 +15,7 @@
   "devDependencies": {
     "browser-sync": "^2.23.7",
     "gulp-clean-css": "^3.9.3",
-    "gulp-concat-js": "^0.1.0",
+    "gulp-concat": "^2.6.1",
     "gulp-htmlmin": "^4.0.0"
   },
   "scripts": {

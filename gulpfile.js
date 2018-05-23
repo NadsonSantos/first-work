@@ -7,12 +7,14 @@ var autoprefixer = require('gulp-autoprefixer');
 var browserSync = require('browser-sync');
 var cleanCSS = require('gulp-clean-css');
 var htmlmin = require('gulp-htmlmin');
+var concat = require('gulp-concat');
 var reload = browserSync.reload;
 
 gulp.task('browser-sync', function() {
     browserSync.init(
     	[
-    		"./src/css/*.css", 
+    		"./src/css/*.css",
+            "./src/scripts/*.js", 
     		"./src/*.html",
     		"./src/image/*"
 		], {
@@ -56,6 +58,12 @@ gulp.task('clean', function(){
 	.pipe(clean())
 });
 
+gulp.task('concatjs', function(){
+    return gulp.src(['./src/scripts/concat/function.js', './src/scripts/concat/menu.js'])
+    .pipe(concat('all.js'))
+    .pipe(gulp.dest('./src/scripts'))
+    .pipe(reload({ stream:true }))
+});
 //para build //
 
 
@@ -76,12 +84,12 @@ gulp.task ('minify', function(){
 gulp.task('copy-js', function(){
     gulp.src('./src/scripts/*.js')
     .pipe(copy())
-    .pipe(gulp.dest('deploy/js'))
+    .pipe(gulp.dest('deploy/scripts'))
 });
 
 
 gulp.task('default', ['clean', 'sass-dev', 'browser-sync'], function(){	
-    gulp.watch(["./src/css/sass/**/*.scss", "./src/css/sass/*/*.scss" ], ['sass-dev'])
+    gulp.watch(["./src/css/sass/**/*.scss", "./src/css/sass/*/*.scss", "./src/scripts/**/*.js", "./src/scripts/*.js" ], ['sass-dev','concatjs'])
 })
  gulp.task('work',['clean','default'])
  gulp.task('build', [ 'sass-dev', 'copy-image', 'copy-js', 'minify', 'minify-css'])

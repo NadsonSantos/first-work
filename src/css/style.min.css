@@ -14,7 +14,6 @@
 }
 
 .ma1 article {
-  height: 56px;
   padding-top: 25px;
   padding-bottom: 25px;
   width: 100%;
@@ -22,6 +21,7 @@
 }
 
 .ma1 article ul {
+  padding: 0px;
   list-style: none;
   text-align: center;
 }
@@ -181,7 +181,7 @@ header nav {
   padding-left: 42px;
   padding-right: 42px;
   width: 100%;
-  z-index: 1000;
+  z-index: 500;
   height: 65px;
   background-color: #ffffff;
   position: fixed;
@@ -242,6 +242,45 @@ header nav ul li:last-child {
 
 .nav-face img {
   margin-bottom: -10px;
+}
+
+.menu-retratil {
+  display: none;
+}
+
+.fechar-menu {
+  display: none;
+}
+
+.subir {
+  display: block;
+  margin-top: 20px;
+  margin-right: 50px;
+  height: 30px;
+  width: 50px;
+  background: none;
+  border: 0;
+}
+
+.subir img {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  display: block !important;
+}
+
+.desaparecer {
+  animation: desaparecer .9s ease-in-out;
+}
+
+@keyframes desaparecer {
+  0% {
+    transform: translate3d(0px 0px 0px);
+  }
+  100% {
+    transform: translate3d(110px 0px 0px);
+    display: none !important;
+  }
 }
 
 footer {
@@ -322,6 +361,55 @@ footer aside img {
   display: inline-block;
   width: 14px;
   height: 16px;
+}
+
+@keyframes animar {}.menu-escondido {
+  position: fixed;
+  display: none;
+  background-color: #037c7c;
+}
+
+.menu-central {
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+}
+
+.menu-central li {
+  padding: 30px;
+}
+
+.menu-central li a {
+  text-shadow: #b5a9a9 1px 1px;
+  color: white;
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: Bold;
+}
+
+.menu-central li img {
+  width: 50px;
+  height: 50px;
+}
+
+@keyframes descer {
+  0% {
+    transform: translate3d(0px, -890px, 0px);
+  }
+  100% {
+    transform: translate3d(0px, 0px, 0px);
+  }
+}
+
+.expandir {
+  display: block;
+  z-index: 10000;
+  width: 100%;
+  height: 100%;
+  animation: descer .8s ease-in-out;
 }
 
 .animar {
@@ -669,6 +757,134 @@ footer aside img {
     width: 100%;
     float: none;
     display: block;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .menu-navegacao {
+    display: none;
+  }
+  .menu-retratil {
+    display: block;
+    margin-right: 50px;
+    background: none;
+    border: 0;
+  }
+  .menu-retratil img {
+    display: flex;
+    width: 30px;
+    display: block !important;
+  }
+  .s2 form {
+    width: 100%;
+    flex-direction: column;
+  }
+  .s2 form .area {
+    padding-left: 25px;
+  }
+  .s2 form .input {
+    display: block;
+  }
+  .s2 .botao {
+    margin-left: 5.3em !important;
+    margin-top: 130px;
+  }
+  footer {
+    width: 100%;
+    flex-direction: column;
+  }
+  footer article {
+    width: 100%;
+    display: block;
+    margin-left: 0px;
+  }
+  footer article h4 {
+    width: 100%;
+  }
+  footer aside {
+    width: 100%;
+    float: none;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .banner-titulo {
+    margin: 0% !important;
+  }
+  .planos {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .planos-box {
+    flex-direction: column;
+    width: 100%;
+  }
+  .plano {
+    margin-right: 0px !important;
+    margin-bottom: 25px;
+  }
+  .localidades {
+    display: inline-block;
+  }
+  .numero {
+    display: block;
+    margin-right: 0px;
+    float: none;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .planos {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .planos-box {
+    flex-direction: column;
+    width: 100%;
+  }
+  .plano {
+    margin-right: 0px !important;
+    margin-bottom: 25px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .s2 form {
+    align-items: center;
+  }
+  .s2 form .inputs {
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .area {
+    padding-left: 0px !important;
+  }
+  .localidades {
+    flex-direction: column;
+    display: flex;
+  }
+  .nav-logo {
+    margin-right: 0 !important;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .s2 form {
+    align-items: center;
+  }
+  .s2 form .inputs {
+    margin-right: 0;
+  }
+  .localidades {
+    align-items: center !important;
+    flex-direction: column;
+    display: flex;
+  }
+  .localidades li {
+    border: 0 !important;
   }
 }
 

@@ -13,7 +13,7 @@ header{
 		padding-left:42px;
 		padding-right:42px;
 		width:100%;	
-		z-index: 1000;
+		z-index: 500;
 	    height: 65px;
 	    background-color: #ffffff;
 	    position: fixed;
@@ -65,4 +65,38 @@ header{
 		img{
 			margin-bottom: -10px;
 		}
+}
+.menu-retratil{
+	display:none;
+}
+.fechar-menu{
+	display:none;
+}
+.subir{
+	display:block;
+	margin-top:20px;
+	margin-right:50px;
+	height:30px;
+	width:50px;
+	background:none;
+	border:0;
+	img{
+		display: flex;
+	    width: 100%;
+	    height: 100%;
+	 	display:block!important;
+
+	}
+}
+.desaparecer{
+	animation:desaparecer .9s ease-in-out;
+}
+@keyframes desaparecer{
+	0%{
+		transform: translate3d(0px 0px 0px) ;
+	}
+	100%{
+		transform:translate3d(110px 0px 0px) ;
+		display:none !important;
+	}
 }
