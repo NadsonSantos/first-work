@@ -33,7 +33,6 @@ footer{
 	}
 	aside{
 	    width: 279px;
-		display:inline-block;
 		float: right;
     	margin-right: 116px;
 		h3{
@@ -49,7 +48,7 @@ footer{
 		h6{
 			@include lato();
 			padding-bottom: 8px;
-			display: inline-block;
+			display: block;
 		    margin: 0px;
 		    font-size: 19px;
     		color: #ffffff;

@@ -79,7 +79,6 @@
 			}
 		}
 		.botao{
-	    	margin-left:5.3em !important;
 	    	margin-top: 130px;
 		}
 	}
@@ -121,15 +120,15 @@
 		form{
 			width:100%;
 			flex-direction:column;
+			align-items: center;
 			.area{
-			    padding-left: 25px;
+			    padding-left: 0px;
 			}
-			.input{
-				display:block;
+			.inputs{
+				margin-right: 0px ; 
 			}
 		}
-		.botao{
-	    	margin-left:5.3em !important;
+		.botao{	
 	    	margin-top: 130px;
 		}
 	}
@@ -194,6 +193,7 @@
 }
 @media screen and (max-width:375px){
 	.s2{
+		align-items: center;
 		form{
 			align-items: center;
 			.inputs{

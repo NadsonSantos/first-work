@@ -131,18 +131,25 @@
 			    padding: 20px;
 			}
 	}
-
+	.enviar{
+		vertical-align: middle;
+		align-items: center;
+		padding-bottom: 74px;
+		display: flex;
+		justify-content: center;
+	}
 	.botao{
-		@include lato();
+		display: flex;
+		font-family: lato;
+		font-weight: 300;
+		letter-spacing: 0px;
 		font-size: 20px;
-		text-align: center;
-  		color: #ffffff;
-	    margin-left: 45%;
+		padding-left: 40px;
+		color: #ffffff;
 		width: 140px;
-  		height: 50px;
-  		border-radius: 100px;
- 		background-color: #262626;
- 		border:1px solid #262626;
- 		margin-bottom:74px;
+		height: 50px;
+		border-radius: 100px;
+		background-color: #262626;
+		border: 1px solid #262626;
 	}
 }
