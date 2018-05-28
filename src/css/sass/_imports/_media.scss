@@ -101,20 +101,17 @@
 	}
 }
 @media screen and (max-width:660px){
+		header{
+			nav{
+				//width:70%;
+				padding-right: 0%;
+			}
+		}
 	.menu-navegacao{
 		display:none;	
 	}
 	.menu-retratil{
-		display:block;
-		margin-right:50px;
-		background:none;
-		border:0;
-		img{
-			display: flex;
-		    width: 30px;
-		 	display:block!important;
-
-		}
+		display: flex;
 	}
 	.s2{
 		form{
@@ -222,11 +219,6 @@
 	}
 }
 @media screen and (max-width:425px){
-	header {
-		 nav{
-		    justify-content: space-around;
-		 }
-	}
 	.s2{
 		form{
 			align-items: center;

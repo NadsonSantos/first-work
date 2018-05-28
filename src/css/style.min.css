@@ -179,38 +179,39 @@
 
 header {
   width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 500;
 }
 
 header nav {
   padding-left: 42px;
   padding-right: 42px;
-  width: 100%;
-  z-index: 500;
   height: 65px;
   background-color: #ffffff;
-  position: fixed;
-  top: 0;
   display: flex;
   justify-content: space-between;
 }
 
 header nav ul {
   padding: 0px;
-  margin: 0px 65px 0 0;
+  margin: 0px 0px 0 0;
   list-style: none;
-  display: inline-block;
+  display: flex;
+  align-items: center;
 }
 
 header nav ul li {
   text-align: center;
-  display: inline-block;
+  display: flex;
+  align-items: center;
 }
 
 header nav ul li a {
-  padding-top: 17px;
+  margin-top: 17px;
   padding-left: 20px;
   padding-right: 20px;
-  display: inline-block;
+  display: flex;
   height: 32px;
   font-family: lato;
   font-weight: 300;
@@ -233,40 +234,46 @@ header nav ul li:hover a {
 }
 
 header nav ul li:last-child {
+  margin-top: 0px;
   background: none;
 }
 
 .nav-logo {
   margin-top: 20px;
+  margin-right: 1px;
 }
 
 .nav-face {
-  padding-top: 17px;
-}
-
-.nav-face img {
-  margin-bottom: -10px;
+  margin-top: 0px !important;
+  padding-top: 0px;
 }
 
 .menu-retratil {
   display: none;
+  padding: 0px;
+  background: none;
+  border: 0;
+}
+
+.menu-retratil img {
+  display: flex;
+  width: 30px;
+  display: block !important;
 }
 
 .fechar-menu {
-  justify-content: flex-end;
   opacity: 1;
   background: #037c7c;
   border: none;
   display: flex;
   padding-top: 13px;
   height: 35px;
-  width: 100%;
+  width: 95%;
+  margin-top: 15px;
 }
 
 .fechar-menu img {
   display: flex;
-  margin-right: 15px;
-  margin-top: 15px;
   height: 25px;
   width: 25px;
 }
@@ -303,6 +310,8 @@ header nav ul li:last-child {
 }
 
 .menu-escondido {
+  width: 100%;
+  height: 100%;
   position: fixed;
   display: none;
   background-color: #037c7c;
@@ -313,7 +322,6 @@ header nav ul li:last-child {
 
 .menu-central {
   padding: 0px;
-  padding-left: 50px;
   margin: 0px;
   display: flex;
   flex-direction: column;
@@ -819,19 +827,14 @@ footer aside img {
 }
 
 @media screen and (max-width: 660px) {
+  header nav {
+    padding-right: 0%;
+  }
   .menu-navegacao {
     display: none;
   }
   .menu-retratil {
-    display: block;
-    margin-right: 50px;
-    background: none;
-    border: 0;
-  }
-  .menu-retratil img {
     display: flex;
-    width: 30px;
-    display: block !important;
   }
   .s2 form {
     width: 100%;
@@ -936,9 +939,6 @@ footer aside img {
 }
 
 @media screen and (max-width: 425px) {
-  header nav {
-    justify-content: space-around;
-  }
   .s2 form {
     align-items: center;
   }
