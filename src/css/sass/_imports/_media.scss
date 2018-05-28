@@ -1,29 +1,4 @@
 @media screen and (max-width:360px){
-	header{
-		nav{
-			padding-left:0px !important;
-		}
-	}
-
-	.menu-retratil{
-		margin-right:0px !important;
-
-	}
-	.cabecalho{
-		nav{
-		    justify-content: space-around;
-			picture{
-				img{
-					margin-left:0;
-					margin-right:50px;
-				}
-				
-			}
-			ul{
-				display:none;
-			}
-		}
-	}
 	.nav-face{
 		margin-bottom:-10px;
 		padding-top:0px;
@@ -32,7 +7,6 @@
 		display:inline-block;
 	}
 	.banner{
-
 		height:auto;
 	    margin-bottom: -39px;
 	}
@@ -106,7 +80,9 @@
 @media screen and (max-width:660px){
 	header{
 		nav{
-			max-width: 99%;
+			// justify-content: normal;
+			width: 100%;
+			padding: 0%;
 		}
 	}
 	.menu-navegacao{	

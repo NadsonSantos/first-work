@@ -269,7 +269,6 @@ header nav ul li:last-child {
   height: 35px;
   width: 35px;
   margin-top: 15px;
-  float: right;
 }
 
 .fechar-menu img {
@@ -296,7 +295,6 @@ header nav ul li:last-child {
 }
 
 .menu-escondido {
-  max-width: 100%;
   width: 100%;
   height: 100%;
   position: fixed;
@@ -345,9 +343,6 @@ header nav ul li:last-child {
 .expandir {
   display: block;
   z-index: 10000;
-  max-width: 100%;
-  width: 100%;
-  height: 100%;
   animation: descer .5s ease-in-out;
 }
 
@@ -450,59 +445,68 @@ footer aside img {
   }
 }
 
+@keyframes facebook {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.face-animado {
+  opacity: 0;
+  animation: facebook 1s ease-in-out;
+  animation-fill-mode: forwards;
+  animation-delay: .9s;
+}
+
 .plano1 {
   opacity: 0;
-  animation: anime-left 2s;
+  animation: anime-left 1s ease-in-out;
   animation-fill-mode: forwards;
-  animation-delay: 4s;
+  animation-delay: 1s;
 }
 
 .plano2 {
   opacity: 0;
-  animation: anime-left 2s;
+  animation: anime-left 1s ease-in-out;
   animation-fill-mode: forwards;
   animation-delay: 2s;
 }
 
+.plano3 {
+  opacity: 0;
+  animation: anime-left 1s ease-in-out;
+  animation-fill-mode: forwards;
+  animation-delay: 3s;
+}
+
+.plano4 {
+  opacity: 0;
+  animation: anime-left 1s ease-in-out;
+  animation-fill-mode: forwards;
+  animation-delay: 4s;
+}
+
 .link1 {
   opacity: 0;
-  animation: anime-left 2s;
+  animation: anime-left 1s ease-in-out;
   animation-fill-mode: forwards;
   animation-delay: 0.6s;
 }
 
 .link2 {
   opacity: 0;
-  animation: anime-left 2s;
+  animation: anime-left 1s ease-in-out;
   animation-fill-mode: forwards;
   animation-delay: 0.7s;
 }
 
-.plano3 {
-  opacity: 0;
-  animation: anime-right 2s ease-in-out;
-  animation-delay: 3s;
-  animation-fill-mode: forwards;
-}
-
-.plano4 {
-  opacity: 0;
-  animation: anime-right 2s ease-in-out;
-  animation-delay: 5s;
-  animation-fill-mode: forwards;
-}
-
 .link3 {
   opacity: 0;
-  animation: anime-right 2s ease-in-out;
+  animation: anime-right 1s ease-in-out;
   animation-delay: 0.8s;
-  animation-fill-mode: forwards;
-}
-
-.link4 {
-  opacity: 0;
-  animation: anime-right 2s ease-in-out;
-  animation-delay: 0.9s;
   animation-fill-mode: forwards;
 }
 
@@ -724,22 +728,6 @@ footer aside img {
 }
 
 @media screen and (max-width: 360px) {
-  header nav {
-    padding-left: 0px !important;
-  }
-  .menu-retratil {
-    margin-right: 0px !important;
-  }
-  .cabecalho nav {
-    justify-content: space-around;
-  }
-  .cabecalho nav picture img {
-    margin-left: 0;
-    margin-right: 50px;
-  }
-  .cabecalho nav ul {
-    display: none;
-  }
   .nav-face {
     margin-bottom: -10px;
     padding-top: 0px;
@@ -812,7 +800,8 @@ footer aside img {
 
 @media screen and (max-width: 660px) {
   header nav {
-    max-width: 99%;
+    width: 100%;
+    padding: 0%;
   }
   .menu-navegacao {
     display: none;
@@ -942,6 +931,8 @@ footer aside img {
 }
 
 body {
+  max-width: 100%;
+  width: 100%;
   margin: 0px;
   padding: 0px;
   border: 0px;

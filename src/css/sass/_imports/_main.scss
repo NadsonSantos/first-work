@@ -24,42 +24,56 @@
         transform: translate3d(0px, 0px , 0px);
     }
 }
+@keyframes facebook{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.face-animado{
+    opacity: 0;
+    animation: facebook 1s ease-in-out;
+    animation-fill-mode: forwards;
+    animation-delay: .9s;
+
+}
 @mixin animar-left($delay){
     opacity:0;
-    animation: anime-left 2s ;
+    animation: anime-left 1s ease-in-out;
     animation-fill-mode:forwards;
     animation-delay: $delay;
 }
+@mixin animar-right($delay){
+    opacity:0;
+    animation: anime-right 1s ease-in-out;
+    animation-delay: $delay;
+    animation-fill-mode:forwards;   
+}
 .plano1{
-    @include animar-left(4s);
+    @include animar-left(1s);
 }
 .plano2{
     @include animar-left(2s);
 }
+.plano3{
+    @include animar-left(3s);
+}
+.plano4{
+    @include animar-left(4s);
+}
+
 .link1{
     @include animar-left(.6s);
 }
 .link2{
     @include animar-left(.7s);
 }
-@mixin animar-right($delay){
-    opacity:0;
-    animation: anime-right 2s ease-in-out;
-    animation-delay: $delay;
-    animation-fill-mode:forwards;   
-}
-.plano3{
-    @include animar-right(3s);
-}
-.plano4{
-    @include animar-right(5s);
-}
 .link3{
     @include animar-right(.8s);
 }
-.link4{
-    @include animar-right(.9s);
-}
+
 .banner {
     margin-top:65px;
 	width:100%;
