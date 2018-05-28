@@ -6,12 +6,6 @@
     line-height: normal;
     letter-spacing: 0px;
 }
-
-
-.animar{
-    animation: body-animar .8s ease-in-out;
-}
-
 @keyframes anime-left{
   0%{
         transform: translate3d( -290px, 0px , 0px );

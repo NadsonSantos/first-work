@@ -262,14 +262,14 @@ header nav ul li:last-child {
 }
 
 .fechar-menu {
-  opacity: 1;
   background: #037c7c;
   border: none;
   display: flex;
-  padding-top: 13px;
+  padding: 0px;
   height: 35px;
-  width: 95%;
+  width: 35px;
   margin-top: 15px;
+  float: right;
 }
 
 .fechar-menu img {
@@ -295,21 +295,8 @@ header nav ul li:last-child {
   display: block !important;
 }
 
-.desaparecer {
-  animation: desaparecer .9s ease-in-out;
-}
-
-@keyframes desaparecer {
-  0% {
-    transform: translate3d(0px 0px 0px);
-  }
-  100% {
-    transform: translate3d(110px 0px 0px);
-    display: none !important;
-  }
-}
-
 .menu-escondido {
+  max-width: 100%;
   width: 100%;
   height: 100%;
   position: fixed;
@@ -358,6 +345,7 @@ header nav ul li:last-child {
 .expandir {
   display: block;
   z-index: 10000;
+  max-width: 100%;
   width: 100%;
   height: 100%;
   animation: descer .5s ease-in-out;
@@ -440,10 +428,6 @@ footer aside img {
   display: inline-block;
   width: 14px;
   height: 16px;
-}
-
-.animar {
-  animation: body-animar .8s ease-in-out;
 }
 
 @keyframes anime-left {
@@ -828,10 +812,12 @@ footer aside img {
 
 @media screen and (max-width: 660px) {
   header nav {
-    padding-right: 0%;
+    max-width: 99%;
   }
   .menu-navegacao {
     display: none;
+    width: 0%;
+    height: 0%;
   }
   .menu-retratil {
     display: flex;

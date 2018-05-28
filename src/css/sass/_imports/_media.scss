@@ -100,15 +100,19 @@
 		}
 	}
 }
+@media screen and (max-width:500px){
+
+}
 @media screen and (max-width:660px){
-		header{
-			nav{
-				//width:70%;
-				padding-right: 0%;
-			}
+	header{
+		nav{
+			max-width: 99%;
 		}
-	.menu-navegacao{
-		display:none;	
+	}
+	.menu-navegacao{	
+		display:none;
+		width: 0%;
+		height: 0%;	
 	}
 	.menu-retratil{
 		display: flex;
