@@ -73,7 +73,21 @@
 .link3{
     @include animar-right(.8s);
 }
-
+.local1{
+    @include animar-right(7s)
+}
+.local2{
+    @include animar-right(6s)
+}
+.local3{
+    @include animar-right(5s)
+}
+.local4{
+    @include animar-right(4s)
+}
+.local5{
+    @include animar-right(3s)
+}
 .banner {
     margin-top:65px;
 	width:100%;

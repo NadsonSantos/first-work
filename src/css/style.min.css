@@ -510,6 +510,41 @@ footer aside img {
   animation-fill-mode: forwards;
 }
 
+.local1 {
+  opacity: 0;
+  animation: anime-right 1s ease-in-out;
+  animation-delay: 7s;
+  animation-fill-mode: forwards;
+}
+
+.local2 {
+  opacity: 0;
+  animation: anime-right 1s ease-in-out;
+  animation-delay: 6s;
+  animation-fill-mode: forwards;
+}
+
+.local3 {
+  opacity: 0;
+  animation: anime-right 1s ease-in-out;
+  animation-delay: 5s;
+  animation-fill-mode: forwards;
+}
+
+.local4 {
+  opacity: 0;
+  animation: anime-right 1s ease-in-out;
+  animation-delay: 4s;
+  animation-fill-mode: forwards;
+}
+
+.local5 {
+  opacity: 0;
+  animation: anime-right 1s ease-in-out;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+}
+
 .banner {
   margin-top: 65px;
   width: 100%;
