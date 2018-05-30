@@ -49,7 +49,7 @@
     opacity:0;
     animation: anime-right 1s ease-in-out;
     animation-delay: $delay;
-    animation-fill-mode:forwards;   
+    animation-fill-mode:forwards; 
 }
 .plano1{
     @include animar-left(1s);
@@ -74,19 +74,19 @@
     @include animar-right(.8s);
 }
 .local1{
-    @include animar-right(7s)
+    @include animar-right(3s);
 }
 .local2{
-    @include animar-right(6s)
+    @include animar-right(4s);
 }
 .local3{
-    @include animar-right(5s)
+    @include animar-right(5s);
 }
 .local4{
-    @include animar-right(4s)
+    @include animar-right(6s);
 }
 .local5{
-    @include animar-right(3s)
+    @include animar-right(7s);
 }
 .banner {
     margin-top:65px;

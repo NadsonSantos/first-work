@@ -25,7 +25,8 @@
 	  	ul{
 	  		padding:0px;
 	  		list-style:none;
-	  		text-align:center;
+			text-align:center;
+			overflow: hidden;
 		  	li{
 			    padding:0px 25px 0px 25px;
 			    border-right: 1px solid #fff;

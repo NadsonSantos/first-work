@@ -24,6 +24,7 @@
   padding: 0px;
   list-style: none;
   text-align: center;
+  overflow: hidden;
 }
 
 .ma1 article ul li {
@@ -269,6 +270,7 @@ header nav ul li:last-child {
   height: 35px;
   width: 35px;
   margin-top: 15px;
+  margin-left: 15px;
 }
 
 .fechar-menu img {
@@ -513,14 +515,14 @@ footer aside img {
 .local1 {
   opacity: 0;
   animation: anime-right 1s ease-in-out;
-  animation-delay: 7s;
+  animation-delay: 3s;
   animation-fill-mode: forwards;
 }
 
 .local2 {
   opacity: 0;
   animation: anime-right 1s ease-in-out;
-  animation-delay: 6s;
+  animation-delay: 4s;
   animation-fill-mode: forwards;
 }
 
@@ -534,14 +536,14 @@ footer aside img {
 .local4 {
   opacity: 0;
   animation: anime-right 1s ease-in-out;
-  animation-delay: 4s;
+  animation-delay: 6s;
   animation-fill-mode: forwards;
 }
 
 .local5 {
   opacity: 0;
   animation: anime-right 1s ease-in-out;
-  animation-delay: 3s;
+  animation-delay: 7s;
   animation-fill-mode: forwards;
 }
 
