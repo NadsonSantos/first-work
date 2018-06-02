@@ -5,15 +5,21 @@ var $doc = $('html, body');
 	 }, 500);
     return false;
 });
+$('.menu-link').click(function() {
+	$doc.animate({
+		 scrollTop: $( $.attr(this, 'href') ).offset().top
+	 }, 500);
+    return false;
+});
 
-var sumir = $(".links").click(function (){
-	$(".menu-escondido").removeClass("expandir");
+var sumir = $(".menu-link").click(function (){
+  $(".menu-escondido").slideToggle('fast');
 });
 var fechar = $(".fechar-menu").click(function(){
-  $(".menu-escondido").removeClass("expandir");
+  $(".menu-escondido").slideToggle('slow');
 });
 $( ".menu-retratil" ).click(function() {
-  $(".menu-escondido").toggleClass( "expandir");
+  $(".menu-escondido").slideToggle('slow');
 });
 function myMap(){
     var mapProp= {

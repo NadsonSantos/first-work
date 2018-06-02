@@ -1,10 +1,10 @@
 
-var sumir = $(".links").click(function (){
-	$(".menu-escondido").removeClass("expandir");
+var sumir = $(".menu-link").click(function (){
+  $(".menu-escondido").slideToggle('fast');
 });
 var fechar = $(".fechar-menu").click(function(){
-  $(".menu-escondido").removeClass("expandir");
+  $(".menu-escondido").slideToggle('slow');
 });
 $( ".menu-retratil" ).click(function() {
-  $(".menu-escondido").toggleClass( "expandir");
+  $(".menu-escondido").slideToggle('slow');
 });

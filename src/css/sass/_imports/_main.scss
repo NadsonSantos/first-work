@@ -41,13 +41,13 @@
 }
 @mixin animar-left($delay){
     opacity:0;
-    animation: anime-left 1s ease-in-out;
+    animation: anime-left .5s ease-in-out;
     animation-fill-mode:forwards;
     animation-delay: $delay;
 }
 @mixin animar-right($delay){
     opacity:0;
-    animation: anime-right 1s ease-in-out;
+    animation: anime-right .5s ease-in-out;
     animation-delay: $delay;
     animation-fill-mode:forwards; 
 }
@@ -71,7 +71,7 @@
     @include animar-left(.7s);
 }
 .link3{
-    @include animar-right(.8s);
+    @include animar-left(.8s);
 }
 .local1{
     @include animar-right(3s);
